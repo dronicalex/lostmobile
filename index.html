@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>LOSTMOBILE</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+<script src="js/app.min.js"></script>
+	<script>
+    $(function(){
+        $('#phone').phonecode({
+            preferCo: 'ru'
+        });
+    });
+</script>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__container _container">
+		<div class="header__burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="header__menu">
+			<a href="#scheme" class="_goto">Схема работы</a>
+			<a href="#question" class="_goto">Вопрос-ответ</a>
+			<a href="#">Контакты</a>
+		</div>
+		<div class="header__logo"><a href="#">LOSTMOBILE</a></div>
+		<div class="header__contacts"><a href="#"><span>Контакты</span> <img src="img/telegram-iconl.png" alt=""></a></div>
+	</div>
+</header>
+			<main class="page">
+				<div class="definition">
+					<div class="definition__container _container">
+						<div class="definition__content">
+							<div class="definition__title">
+								<p>Определение местоположения абонента по номеру телефона всего <span>за 149 рублей!</span></p>
+							</div>
+							<div class="definition__text">
+								<p><span>Первый в России</span> сервис, позволяющий официально отследить геолокацию абонента любого оператора по номеру телефона <span>с точностью до 5 метров</span></p>
+								<p>Установка дополнительного программного обеспечения на отслеживаемое либо ваше устройство не требуется</p>
+							</div>
+							<form action="" method="post" class="definition__form">
+								<input type="tel" id="phone" name="phone" autofocus="true" placeholder="9990000000" class="arrrr" maxlength="10" onkeypress='validate(event)'>
+								<div class="definition__btn"><span>Поиск</span> <img src="img/search.svg" alt=""> <div>ошибка: Некорректный формат телефона</div></div>
+							</form>
+							<div class="definition__progress">
+								<span>Инициализация</span>
+								<div class="definition__loading">1%</div>
+							</div>
+						</div>
+						<div class="definition__img">
+							<img src="img/phone.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="complited">
+					<div class="complited__conteiner _container">
+						<div class="complited__content">
+							<div class="complited__information information-complited">
+								<div class="information-complited__title">Номер <span class="_num">7(985) 836-52-92</span> идентифицирован</div>
+								<div class="information-complited__body">
+									<div class="information-complited__item">
+										<div class="information-complited__img"><img src="img/country.png" alt=""></div>
+										<div class="information-complited__text">
+											<p class="nformation-complited__info">Страна</p>
+											<p class="nformation-complited__yes">определено</p>
+										</div>
+									</div>
+									<div class="information-complited__item">
+										<div class="information-complited__img"><img src="img/city.png" alt=""></div>
+										<div class="information-complited__text">
+											<p class="nformation-complited__info">Город</p>
+											<p class="nformation-complited__yes">определено</p>
+										</div>
+									</div>
+									<div class="information-complited__item">
+										<div class="information-complited__img"><img src="img/operator.png" alt=""></div>
+										<div class="information-complited__text">
+											<p class="nformation-complited__info">Оператор</p>
+											<p class="nformation-complited__yes">определено</p>
+										</div>
+									</div>
+									<div class="information-complited__item">
+										<div class="information-complited__img"><img src="img/region.png" alt=""></div>
+										<div class="information-complited__text">
+											<p class="nformation-complited__info">Регион</p>
+											<p class="nformation-complited__yes">определено</p>
+										</div>
+									</div>
+									<div class="information-complited__item">
+										<div class="information-complited__img"><img src="img/warning.png" alt=""></div>
+										<div class="information-complited__text">
+											<p class="nformation-complited__info">Текущее местоположение</p>
+											<p class="nformation-complited__yes nformation-complited__yes_red">Внимание! Требуется оплата</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="complited__img"><img src="img/id.png" alt=""></div>
+						</div>
+						<div class="complited__money money-complited">
+							<form action="" method="post">
+								<div class="money-complited__contacts">
+									<div class="money-complited__title">Контактная информация:</div>
+									<input type="email" name="" id="" placeholder="Ваш email">
+								</div>
+								<div class="money-complited__payment">
+									<div class="money-complited__title">Выберите способ оплаты:</div>
+									<div class="money-complited__method">
+										<input type="radio" name="method" id="qiwi">
+										<label for="qiwi"><img src="img/qiwi.png" alt=""> QIWI кошелёк</label>
+										<input type="radio" name="method" id="card">
+										<label for="card"><img src="img/card.png" alt=""> Банковская карта</label>
+
+									</div>
+								</div>
+								<div class="money-complited__btn">
+									<div class="money-complited__title money-complited__title_m">Перейти к оплате:</div>
+									<a class="money-complited__botton" href="">Оплата</a>
+									<a class="money-complited__new" href="#definition">Новый поиск</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="scheme">
+					<div class="scheme__container _container">
+						<div class="scheme__content">
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif item-scheme__cif_one"><img src="img/0.svg" alt=""></div>
+								<div class="item-scheme__text item-scheme__text_b">Регистрация</div>
+								<div class="item-scheme__text item-scheme__text_s">на сайте</div>
+							</div>
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif">2</div>
+								<div class="item-scheme__text item-scheme__text_b">Вводите номер</div>
+								<div class="item-scheme__text item-scheme__text_s">абонента</div>
+							</div>
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif">3</div>
+								<div class="item-scheme__text item-scheme__text_b">Обрабатывается</div>
+								<div class="item-scheme__text item-scheme__text_s">запрос</div>
+							</div>
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif">4</div>
+								<div class="item-scheme__text item-scheme__text_b">Определяется</div>
+								<div class="item-scheme__text item-scheme__text_s">местонахождение</div>
+							</div>
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif">5</div>
+								<div class="item-scheme__text item-scheme__text_b">Оплачиваете</div>
+								<div class="item-scheme__text item-scheme__text_s">услугу</div>
+							</div>
+							<div class="scheme__item item-scheme">
+								<div class="item-scheme__cif"><img src="img/6.png" alt=""></div>
+								<div class="item-scheme__text item-scheme__text_b">Геоданные</div>
+								<div class="item-scheme__text item-scheme__text_s">на карте</div>
+							</div>
+						</div>
+						<div class="scheme__text text-scheme">
+							<div class="text-scheme__title">Внимание!</div>
+							<p>Отслеживание кого-либо может существенно нарушать конфиденциальность и должно использоваться, только если:</p>
+							<ul>
+								<li>Ваш телефон украден и Вы пытаетесь определить его нахождение</li>
+								<li>Вы хотите следить за своими детьми ( до 16 лет)</li>
+								<li>Это касается вашего телефона и мобильного номера</li>
+								<li>У вас есть явное разрешение от абонента, местоположение которого вы хотите определить</li>
+							</ul>
+							<p>Если окажется, что вы нарушили одно из этих правил, мы немедленно заблокируем вашу учетную запись!</p>
+						</div>
+					</div>
+				</div>
+				<div class="benefits">
+					<div class="benefits__container _container">
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-1.png" alt=""></div>
+							<div class="benefits__text">Простой интерфейс, понятный любому пользователю</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-2.png" alt=""></div>
+							<div class="benefits__text">Совместимость со всеми современными устройствами</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-3.png" alt=""></div>
+							<div class="benefits__text">Точность местоположения мобильного устройства до 5 метров</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-4.png" alt=""></div>
+							<div class="benefits__text">Поддерживаются все сотовые операторы</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-5.png" alt=""></div>
+							<div class="benefits__text">Мы не интересуемся с какой целью Вы используете наш сервис</div>
+						</div>
+						<div class="benefits__item">
+							<div class="benefits__img"><img src="img/advantages-6.png" alt=""></div>
+							<div class="benefits__text">Неограниченное количество устройств</div>
+						</div>
+					</div>
+				</div>
+				<div class="question">
+					<div class="question__container _container">
+						<div class="question__title">Часто задаваемые вопросы</div>
+						<div class="question__block">
+							<div class="question__item">
+								<div class="question__question">Нужно ли загружать или устанавливать какое-либо программное обеспечение?</div>
+								<div class="question__response">Нет. Установка дополнительного программного обеспечения на отслеживаемое либо ваше устройство не требуется.</div>
+							</div>
+							<div class="question__item">
+								<div class="question__question">Какие модели телефонов можно отследить?</div>
+								<div class="question__response">Наш сервис позволяет обнаружить любые устройства, функционирующие на различных операционных системах: iOS, Android, Windows Mobile, Symbian и Linux.</div>
+							</div>
+							<div class="question__item">
+								<div class="question__question">Насколько точно будет определено местоположение телефона?</div>
+								<div class="question__response">Точность обычно составляет до 5 метров, в некоторых случаях до 50 метров (если телефон находится в здании, метро и т.п.)</div>
+							</div>
+							<div class="question__item">
+								<div class="question__question">Как быстро происходит поиск?</div>
+								<div class="question__response">Вы увидите текущее местоположение телефона в течение нескольких минут</div>
+							</div>
+							<div class="question__item">
+								<div class="question__question">Сервис LOSTMOBILE работает по подписке?</div>
+								<div class="question__response">Наш сервис не является услугой подписки. У нас нет никаких скрытых платежей. Вы оплачиваете услугу один раз.
+								</div>
+							</div>
+							<div class="question__item">
+								<div class="question__question">Насколько конфиденциальным является использование LOSTMOBILE? </div>
+								<div class="question__response">Вся информация о пользователе проходит через двухфакторную фазу шифрования. Кроме того, мы оставляем за собой право не разглашать третьим лицам информацию о
+									любых операциях, связанных с сервисом LOSTMOBILE. Оплата наших услуг составляет 100% анонимность.</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__body">
+			<div class="footer__block">
+				<div class="footer__title footer__title_bg">LOSTMOBILE</div>
+				<div>
+					<a href="" class="footer__link"><img src="img/appstore.png" alt=""></a>
+					<a href="" class="footer__link"><img src="img/googleplay.png" alt=""></a>
+				</div>
+			</div>
+			<div class="footer__block">
+				<div class="footer__title">Информация</div>
+				<a href="conditions.html" class="footer__link" target="blank">Условия пользования сайтом</a>
+				<a href="confidentiality.html" class="footer__link" target="blank">Политика конфиденциальности</a>
+				<a href="safety.html" class="footer__link" target="blank">Политика безопасности</a>
+			</div>
+			<div class="footer__block">
+				<div class="footer__title">Контакты</div>
+				<a href="" class="footer__link"><img src="img/mail.png" alt=""> <span>a.t.poisk@gmail.com</span></a>
+				<a href="" class="footer__link"><img src="img/location_outline.png" alt=""><span>196601, Санкт-Петербург, г. Пушкин Октябрьский б-р, д. 50/30 лит. А пом. 7-Н, комп. 14</span></a>
+
+			</div>
+			<div class="footer__block">
+				<div class="footer__title">Платежные системы</div>
+				<div class="footer__links">
+					<a href="" class="footer__link"><img src="img/qiwi.png" alt=""></a>
+					<a href="" class="footer__link"><img src="img/masterCard.png" alt=""></a>
+					<a href="" class="footer__link"><img src="img/visa.png" alt=""></a>
+					<a href="" class="footer__link"><img src="img/mir.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<a href="#" target="blank">© 2021. Все права защищены</a>
+			<p>Cайт разработан: <a href="https://www.mako.md" target="blank">mako.md</a></p>
+		</div>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+
+	</body>
+	<script src="js/vendors.min.js"></script>
+
+</html>
